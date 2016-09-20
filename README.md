@@ -73,7 +73,7 @@ Pre-release versions can be installed from this repository via
 
 ``` {.r}
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("meyera/riskscorer")
+devtools::install_github("giacombi/riskscorer")
 ```
 
 A CRAN release will follow.
