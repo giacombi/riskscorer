@@ -134,7 +134,7 @@ do_sts_request <- function(queryList, verbose = FALSE) {
 #'                 Cannon et al. JACC Vol. 61, No. 9, 2013
 #'                 Values: "Yes", "No", or booleans string, "Unknown"
 #'
-#' @param diabetes_ctrl Indicate the patient’s diabetes control method as presented
+#' @param diabetes_ctrl Indicate the patientâ€™s diabetes control method as presented
 #'                      on admission
 #'                      Values: "diet", "oral", "insulin", "other", "other_subcutaneous",
 #'                              "none", "unknown"
@@ -164,7 +164,7 @@ do_sts_request <- function(queryList, verbose = FALSE) {
 #'                          * cardiac conduction abnormality*
 #'                      With no other recognized cause and at least 1 of the following:
 #'                        a. organisms cultured from 2 or more blood cultures
-#'                        b. organisms seen on Gram’s stain of valve when culture
+#'                        b. organisms seen on Gramâ€™s stain of valve when culture
 #'                           is negative or not done
 #'                        c. valvular vegetation seen during an invasive procedure
 #'                           or autopsy
@@ -731,7 +731,7 @@ calc_sts <- function(age,
       queryList$iabp <- "No"
     } else if (str_starts_with(iabp_when, "pre") ||
                str_starts_with(iabp_when, "prae") ||
-               str_starts_with(iabp_when, "prä")) {
+               str_starts_with(iabp_when, "pra")) {
       queryList$iabp <- "Yes"
       queryList$iabpwhen <- "Preop"
     } else if (str_starts_with(iabp_when, "intra")) {
